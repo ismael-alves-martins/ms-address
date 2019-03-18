@@ -46,11 +46,8 @@ public class CustomerServiceImpl implements CustomerService {
 	@Override
 	public List<CustomerResponseDTO> getAllClients() {
 		logger.info("start getAllClients - INFO");
-		logger.debug("start getAllClients - DEBUG");
-		logger.warn("start getAllClients - WARN");
-		logger.error("start getAllClients - ERROR");
-		List<CustomerEntity> CustomerEntity = customerRepository.findAll();
-		return Util.mapAllObjects(CustomerEntity, CustomerResponseDTO.class, modelMapper);
+		List<CustomerEntity> customerEntity = customerRepository.findAll();
+		return Util.mapAllObjects(customerEntity, CustomerResponseDTO.class, modelMapper);
 	}
 
 	@Override

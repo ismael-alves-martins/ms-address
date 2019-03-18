@@ -1,5 +1,7 @@
 package br.com.pan.address.controllers;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -26,10 +28,10 @@ public class CustomerController {
 		return ResponseEntity.status(HttpStatus.OK).body(customerService.getCustomerByCpf(cpf));
 	}
 	
-//	@GetMapping("/v1/customer")
-//	public ResponseEntity<List<CustomerResponseDTO>> getAllClients() {
-//		return ResponseEntity.status(HttpStatus.OK).body(customerService.getAllClients());
-//	}
+	@GetMapping("/v1/customer")
+	public ResponseEntity<List<CustomerResponseDTO>> getAllClients() {
+		return ResponseEntity.status(HttpStatus.OK).body(customerService.getAllClients());
+	}
 	
 	@PostMapping("/v1/customer")
 	public ResponseEntity<Void> saveClient(@RequestBody ClientRequestDTO clientRequest) {
