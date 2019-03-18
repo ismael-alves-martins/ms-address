@@ -1,0 +1,23 @@
+{
+    "createDate": "2019-03-17T21:31:28.049-03:00",
+    "lastModifiedDate": "2019-03-17T21:31:28.049-03:00",
+    "id": 1,
+    "firstName": "Fulana",
+    "lastName": "de Tal",
+    "cpf": "04283273465",
+    "address": [
+        {
+            "createDate": "2019-03-17T21:31:28.057-03:00",
+            "lastModifiedDate": "2019-03-17T21:31:28.057-03:00",
+            "id": 2,
+            "street": "Rua Fraiburgo, 42-D",
+            "district": "Bongi",
+            "postalCode": "50751190",
+            "complement": "Casa A",
+            "city": "Recife",
+            "state": "Osasco",
+            "country": "Brasil",
+            "clientID": 1
+        }
+    ]
+}
